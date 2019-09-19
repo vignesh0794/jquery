@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 2: Exercise 3</title>
+    <meta name="read-only" content="true">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta name="author" content="none">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="3.js"></script>
+    <style>
+      #name_input {
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+
+      #date_input {
+        float: left;
+        margin-bottom: 20px;
+      }
+
+      #year_input {
+        clear:both;
+      }
+
+      .rank_color {
+        width: 20px;
+        margin-top: 2px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h2>jQuery UI-Survey</h2>
+    <h3>General Information</h3>
+    <div id="name_input">
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+    </div>
+    <div id="date_input">
+      <label for="date">Date:</label>
+      <input type="text" id="date" />
+    </div>
+    <div id="year_input">
+	<h3>Are you enrolled as an undergraduate or a graduate?</h3>
+      <input type="radio" name="enroll_year" id="ugrad" value="ugrad"> 
+      <label for="ugrad">Undergraduate (taking 6.813, doesn't have to do RS assignments)</label>
+      <input type="radio" name="enroll_year" id="grad" value="grad"> 
+      <label for="grad">Graduate (taking 6.831, required to do RS assignments)</label>
+    </div>
+
+    <div id="color_input">
+      <h3>Rank the colors listed from your most favorite (1) to your least favorite (5). Be sure to only use each ranking once.</h3>
+      
+      <input type="text" class="rank_color" id="red" />
+      <label for="red">#ff0000</label><br/>
+      <input type="text" class="rank_color" id="blue" />
+      <label for="blue">#0000ff</label><br/>
+      <input type="text" class="rank_color" id="hot_pink" />
+      <label for="hot_pink">#ff00b3</label><br/>
+      <input type="text" class="rank_color" id="mustard" />
+      <label for="mustard">#ded447</label><br/>
+      <input type="text" class="rank_color" id="dark_green" />
+      <label for="dark_green">#125e18</label><br/>
+      
+    </div>
+
+  </body>
+</html>
